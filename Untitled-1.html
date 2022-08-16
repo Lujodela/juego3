@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola familia hermosa</title>
+    <style>
+        .body{
+            background-color: aquamarine;
+            text-align: center;
+        }
+
+        .body__img{
+            width:25%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="body__title">Solo queria decirles que las amo mucho y que son muyyy hermozas❤</h1>
+    <h2>¿Sabian que esta cerca a estrenarse el juego god of war Ragnarok? Me haria mucha ilusion tenerlo en mi cumpleaños :3 ❤  </h2>
+    <h3>¿Me lo regalan?❤>
+    <img class="body__img"
+      src="https://i.ytimg.com/vi/Y4waga9Tt8U/maxresdefault.jpg" 
+      alt="porfis">
+    <button id="yes">Si Johan precioso</button>
+    <button id="no">No Johan, No jodas</button>
+
+    <script>
+        const vutonSi = document.getElementById("yes")
+        const vutonNo = document.getElementById("no")
+
+        const jueguito = () => {
+            alert("Sabia que iban a decir que SI :3");
+            alert("❤Me hare el sorprendido en mi cumpleaños💖")
+            location.href = "https://www.youtube.com/watch?v=K_0EapIRMA0";
+        }
+
+        const ebitarKCRompaMyBobo = () => {
+            vutonNo.style.position = "absolute";
+            vutonNo.style.top = (Math.random() * window.innerHeight) + "px";
+            vutonNo.style.left = (Math.random() * window.innerHeight) + "px";
+        }
+
+        vutonSi.addEventListener("click" , jueguito);
+        vutonNo.addEventListener("mouseover" , ebitarKCRompaMyBobo);
+    </script>
+</body>
+    
+</html>
